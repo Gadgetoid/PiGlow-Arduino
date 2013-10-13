@@ -6,6 +6,17 @@ Installation
 
 Simple drop PiGlow into your Arduino libraries folder and load up the Demo Sketch.;
 
+Usage
+-----
+
+    PiGlow piglow;
+
+    void setup() {
+    	piglow.setup(255); // Setup with brightness value
+    	piglow.reset(); // Clear all LEDs
+
+    	piglow.ring(0,255); // Light up the Red ring
+    }
 
 Connecting Up
 -------------
@@ -24,4 +35,3 @@ The pinout is as follows:
     [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ]
                      |                       |   |   |
                     3.3v                    SCL SDA 3.3v
-                    
